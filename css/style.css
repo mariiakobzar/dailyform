@@ -52,7 +52,12 @@ a{
 
 .create-form__input--small{
 	width: 193px;
+	margin-right: 10px;
 }
+
+	.create-form__input--small + .create-form__input--small{
+		margin-right: 0px;
+	}
 
 .wrapper{
 	display: flex;
@@ -61,6 +66,14 @@ a{
 
 .create-form__input{
 	margin-bottom: 15px;
+}
+
+.create-form__input:hover{
+	border: 1px solid #e12a6c;
+}
+.create-form__input:focus{
+	border: 1px solid #e12a6c;
+	color: #e12a6c;
 }
 
 .container__title:before{
@@ -80,6 +93,11 @@ a{
 	font-weight: 700;
 	font-size: 18px;
 	margin-bottom: 25px;
+}
+
+.create-form__btn:hover,
+.create-form__btn:focus{
+	border: none;
 }
 
 
